@@ -1,4 +1,5 @@
 #require libraries/modules here
+<<<<<<< HEAD
 require 'nokogiri'
 require 'pry'
 
@@ -25,9 +26,21 @@ def create_project_hash
     }
     #binding.pry
   end
-
   # return the projects hash
   projects
 end
 
 create_project_hash
+=======
+require 'pry'
+require "nokogiri"
+
+def create_project_hash
+  binding.pry
+  html = File.read('fixtures/kickstarter.html')
+  kickstarter = Nokogiri(html)
+
+
+  # write your code here
+end
+>>>>>>> 2a41c1fa3addad3bc954985b50cc827a8ee8ae39
